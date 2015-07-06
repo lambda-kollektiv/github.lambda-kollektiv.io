@@ -1,8 +1,8 @@
-lambda-kollektiv.github.io
+* lambda-kollektiv.github.io
 =================
 Our team blog.
 
-## Installation
+** Installation
 `Ruby >= 2.0.0` is required as jekyll is used on gh-pages. Check version:
 
 ```
