@@ -10,31 +10,32 @@
 **** Installation
 =Ruby >= 2.0.0= is required as jekyll is used on gh-pages. Check version:
 
-```
+#+BEGIN_SRC 
 ruby --version
-```
+#+END_SRC
 
 If not installed:
 
-```
+#+BEGIN_SRC 
 sudo apt-get install ruby
-```
+#+END_SRC
 
 Install =bundler= for easier ruby lib management configured in =Gemfile=:
-```
+
+#+BEGIN_SRC 
 sudo gem install bundler
-```
+#+END_SRC
 
 Now run the server:
 
-```
+#+BEGIN_SRC 
 bundle exec jekyll server
-```
+#+END_SRC
 
 and for drafts run 
-```
+#+BEGIN_SRC 
 bundle exec jekyll server --drafts
-```
+#+END_SRC
 **** TODOs
 **** References
 **** License
