@@ -5,10 +5,9 @@
 #+TODO: CANCELED(c@)
 #+STARTUP: overview 
 #+STARTUP: hidestars
-=================
 
 **** Installation
-=Ruby >= 2.0.0= is required as jekyll is used on gh-pages. Check version:
+Mimimum =Ruby 2.0.0= is required as jekyll is used on gh-pages. Check version:
 
 #+BEGIN_SRC 
 ruby --version
@@ -36,7 +35,22 @@ and for drafts run
 #+BEGIN_SRC 
 bundle exec jekyll server --drafts
 #+END_SRC
+
 **** TODOs
+***** TODO deploy gitlab					 :deployment:
+     DEADLINE: <2015-08-06 Do>
+     :PROPERTIES:
+     :Created: [2015-07-21 Di 19:00]
+     :Assigned_to: kordano
+     :END:
+    
+- See [[https://about.gitlab.com/features/]] for details 
+***** TODO design company logo 					     :design:
+    DEADLINE: <2015-07-22 Mi>
+    :PROPERTIES:
+    :Created: [2015-07-13 Mo 15:48]
+    :Assigned_to: kordano
+    :END:
 **** References
 **** License
 
