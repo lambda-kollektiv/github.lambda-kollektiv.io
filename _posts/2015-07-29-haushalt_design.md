@@ -1,5 +1,5 @@
 ---
-title: Haushalt: Design
+title: Haushalt Design
 layout: post
 author: judith
 abstract: Design decisions for Haushalt
