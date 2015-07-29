@@ -6,7 +6,7 @@ abstract: Design decisions for Haushalt
 ---
 
 # Data Model
-![Haushalt data model](https://raw.github.com/lambda-kollektiv/haushalt/master/design/haushalt-datamodel.pdf)
+![Haushalt data model](haushalt-datamodel.pdf)
 
 
 # User Interface
@@ -16,9 +16,8 @@ The user interface will be modular consisting of a pin board where a user can pl
 A widget takes two arguments: the global state and its configuration, both being hash-maps that need to define certain keys depending on the widget type.
 
 
-```
-(generic-widget global-state configuration)
-```
+    (generic-widget global-state configuration)
+
 
 ## Input Widget
 Widget for adding data like new expenses or revenues.
@@ -26,12 +25,14 @@ Widget for adding data like new expenses or revenues.
 Necessary keys for input maps:
 
 - **Global state:** _none_
+
   Further possibly useful entries:
   - companies, expenses, revenues if auto-completion or suggestions are implemented
 
 - **Configuration:** _type, detailed_
-  - **type:** "expense" | "revenue", default: "expense"
-  - **detailed:** false | true, default: false
+  - **type:** "expense" \| "revenue", default: "expense"
+  - **detailed:** false \| true, default: false
+
   Further possible configurations:
   - design specifics
 
@@ -45,11 +46,11 @@ Necessary keys for input maps:
 - **Global state:** _expenses, revenues_
 
 - **Configuration:** _expenses, revenues, detailed, sort-key, ascending_
-  - **expenses:** true | false, default: true
-  - **revenues:** true | false, default: true
-  - **detailed:** false | true, default: false
-  - **sort-key:** date | category | ..., default: date
-  - **ascending:** false | true, default: false
+  - **expenses:** true \| false, default: true
+  - **revenues:** true \| false, default: true
+  - **detailed:** false \| true, default: false
+  - **sort-key:** date \| category \| ..., default: date
+  - **ascending:** false \| true, default: false
 
 **Effect:** none
 - if editing is permitted: global state changes
@@ -62,12 +63,13 @@ Necessary keys for input maps:
 - **Global state:** _expenses, revenues_
 
 - **Configuration:** _type, categories, period, compare_
-  - **type:** "all" \| "expenses" | "revenues" , default: "all"
-  - **categories:** true | false, default: true
+  - **type:** "all" \| "expenses" \| "revenues" , default: "all"
+  - **categories:** true \| false, default: true
     - bar diagram becomes
-  - **period:** [0-8]+, default: 30 (in days)
-  - **compare:** true | false, default: true
+  - **period:** \[0-8\]+, default: 30 (in days)
+  - **compare:** true \| false, default: true
     - compare to previous time period
+
   Further possible configurations:
   - design specifics
 
@@ -84,8 +86,9 @@ Necessary keys for input maps:
 - **Global state:** _none_
 
 - **Configuration:** _zero_
-  - **zero:** [0-9]+, default: 0
+  - **zero:** \[0-9\]+, default: 0
     - chosen line where budget is zero, assumption for deault: user starts with no budget
+
   Further possible configurations:
   - design specifics
 
