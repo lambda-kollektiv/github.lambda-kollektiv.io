@@ -5,10 +5,6 @@ author: judith
 abstract: Design decisions for Haushalt
 ---
 
-# Data Model
-![Haushalt data model](haushalt-datamodel.pdf)
-
-
 # User Interface
 
 The user interface will be modular consisting of a pin board where a user can place an arbitrary number of widgets. Widgets will show input forms, tables, statistics or whatever the user wants to have quick access to. The different widget types will have different variations, so sometimes it will make sense to have multiple widgets of the same type on one board.
@@ -16,7 +12,7 @@ The user interface will be modular consisting of a pin board where a user can pl
 A widget takes two arguments: the global state and its configuration, both being hash-maps that need to define certain keys depending on the widget type.
 
 
-    (generic-widget global-state configuration)
+`(generic-widget global-state configuration)`
 
 
 ## Input Widget
@@ -34,6 +30,7 @@ Necessary keys for input maps:
   - **detailed:** false \| true, default: false
 
   Further possible configurations:
+
   - design specifics
 
 **Effect:** global state changes
@@ -53,6 +50,7 @@ Necessary keys for input maps:
   - **ascending:** false \| true, default: false
 
 **Effect:** none
+
 - if editing is permitted: global state changes
 
 ## Summary Widget
@@ -71,6 +69,7 @@ Necessary keys for input maps:
     - compare to previous time period
 
   Further possible configurations:
+
   - design specifics
 
 **Effect:** none
@@ -90,6 +89,7 @@ Necessary keys for input maps:
     - chosen line where budget is zero, assumption for deault: user starts with no budget
 
   Further possible configurations:
+
   - design specifics
 
 **Effect:** none
