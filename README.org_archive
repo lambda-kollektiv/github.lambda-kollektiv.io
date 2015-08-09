@@ -1,0 +1,23 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/konny/projects/lambda-kollektiv.github.io/README.org
+
+
+* CANCELED deploy gitlab					 :deployment:
+      CLOSED: [2015-08-05 Mi 13:44] DEADLINE: <2015-08-06 Do>
+      :LOGBOOK:  
+      - State "CANCELED"   from "TODO"       [2015-08-05 Mi 13:44] \\
+	in the future
+      :END:      
+     :PROPERTIES:
+     :Created: [2015-07-21 Di 19:00]
+     :Assigned_to: kordano
+     :ARCHIVE_TIME: 2015-08-06 Do 21:13
+     :ARCHIVE_FILE: ~/projects/lambda-kollektiv.github.io/README.org
+     :ARCHIVE_OLPATH: TODOs
+     :ARCHIVE_CATEGORY: lambda-kollektiv
+     :ARCHIVE_TODO: CANCELED
+     :END:
+    
+- See [[https://about.gitlab.com/features/]] for details 

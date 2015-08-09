@@ -37,16 +37,8 @@ bundle exec jekyll server --drafts
 #+END_SRC
 
 **** TODOs
-***** TODO deploy gitlab					 :deployment:
-     DEADLINE: <2015-08-06 Do>
-     :PROPERTIES:
-     :Created: [2015-07-21 Di 19:00]
-     :Assigned_to: kordano
-     :END:
-    
-- See [[https://about.gitlab.com/features/]] for details 
 ***** TODO design company logo 					     :design:
-    DEADLINE: <2015-07-22 Mi>
+    DEADLINE: <2015-08-13 Do>
     :PROPERTIES:
     :Created: [2015-07-13 Mo 15:48]
     :Assigned_to: kordano
